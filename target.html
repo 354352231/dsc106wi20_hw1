@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jin's website</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="hw1.js"></script>
+    </head>
+
+    <header>
+        <div class="header">
+            <div class="title">
+                <img src="images/dw-logo.png">
+                <h1>Global Dashboard</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+    <body>
+        <section>
+            <div class="container1">
+                <div class="box">
+                    <h2> Dingus</h2>
+                    <p>0</p>
+                </div>
+
+                <div class="box">
+                <h2> Widget</h2>
+                <p>0</p>
+                </div>
+                
+                <div class="box">
+                <h2>Sales</h2>
+                <p>
+                    <span style="color: green;">$</span>
+                    <span style="color: blue;">0.00</span>
+                </p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <div class="container2">
+            <div class="figure">
+                <figcaption>Total Sales Breakdown</figcaption>
+                <img src="images/pie.png">
+            </div>
+
+            <div class="figure">
+                <figcaption>Sales Per Day</figcaption>
+                <img src="images/bar.png">
+            </div>
+
+            <div class="figure">
+                <iframe src="https://app.zingsoft.com/demos/view/DK4RG3XN"></iframe>
+                <a href="https://app.zingsoft.com/demos/view/DK4RG3XN">Source</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <hr>
+
+        <div class="container3">
+            
+            <div class="table">
+                </fieldset>
+                    <table align=center class="tg">
+                        <colgroup>
+                            <col style="background-color:#9b9b9b">
+                        </colgroup>
+                        <caption>Order History</caption>
+                        <thead>
+                        <tr>
+                        <th class="tg-c8qk" rowspan="2"><span style="font-weight:bold">ID#</span></th>
+                        <th class="tg-0lax" rowspan="2"><span style="font-weight:bold">Date</span></th>
+                        <th class="tg-0lax" colspan="2"><span style="font-weight:bold">Quantity</span></th>
+                        <th class="tg-0lax" rowspan="2"><span style="font-weight:bold">Total</span></th>
+                        </tr>
+                        <tr>
+                        <td class="tg-0lax">Dingus</td>
+                        <td class="tg-0lax">Widget</td>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                        <td class="tg-exqi">1221</td>
+                        <td class="tg-baqh">12/12/19</td>
+                        <td class="tg-baqh">4</td>
+                        <td class="tg-baqh">10</td>
+                        <td class="tg-baqh">$12.33</td>
+                        </tr>
+                        <tr>
+                        <td class="tg-exqi">1222</td>
+                        <td class="tg-baqh">12/21/19</td>
+                        <td class="tg-baqh">1</td>
+                        <td class="tg-baqh">2</td>
+                        <td class="tg-baqh">$27.34</td>
+                        </tr>
+                        <tr>
+                        <td class="tg-exqi">1223</td>
+                        <td class="tg-baqh">1/5/20</td>
+                        <td class="tg-baqh">14</td>
+                        <td class="tg-baqh">19</td>
+                        <td class="tg-baqh">$345.33</td>
+                        </tr>
+                        </tbody>
+
+                        <tfoot>
+                        <tr>
+                        <td class="tg-exqi" colspan="5">©2020 D&amp;W Worldwide.</td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="order">
+            <details>
+                <summary onclick="showDialog()">Order Form</summary>
+                <dialog id='dialog'><p3>This section will work only after HW2!</p3></dialog>
+                <script>
+                    var dialog = document.querySelector('dialog');
+                    function showDialog() {
+                        console.log('Fired');
+                        dialog.show();
+                        setTimeout(function () {
+                            dialog.close();
+                        }, 3000);
+                    }
+                </script>
+                <hr>
+                <form>
+                    <label for="xx">Dingus</label>
+                    <input type="text">
+                    <label for="yy">@</label>
+                    <input type="text">
+                    <label for="yy">=$</label>
+                    <input type="text">
+                    <br>
+                    <br>
+                    <label for="xx">Widget</label>
+                    <input type="text">
+                    <label for="yy">@</label>
+                    <input type="text">
+                    <label for="yy">=$</label>
+                    <input type="text">
+                    <br>
+                    <br>
+                    <label for="yy">Total $</label>
+                    <input type="text">
+                    <br>
+                    <br>
+                    <label for="yy">Shipping</label>
+                    <input type="text">
+                    <br>
+                    <br>
+                    <h3>Payment</h3>
+                    <div class="ex1">Visa<br>MasterCard<br>PayPal</div>
+                    <br>
+                    <label for="comments">Comment</label>
+                    <textarea name="comments" id="comments"></textarea>
+                    <br>
+                    <br>
+                    <button type="button">Cancel</button>
+                    <button type="button">Order</button>
+                </form>
+            </details>
+            <br>
+   
+        </div>
+
+        <div class="final">
+            <p2>Disclaimer: This page is provided <em>as is</em></p2>
+            <br>
+            <br>
+            <p2>Notes</p2>
+            <br>
+            <br>
+            <li>Your order will leave warehouse in 3-5 days</li>
+            <li>If you have anu question please contact us at 123456789</li>
+            <li>D&W is a proud supporter of the <i>Stuart Collection</i></li><br>
+            <br>
+            <address><footer>9500 Gilman Dr, La Jolla, CA 92093</footer></address>
+
+        </div>
+
+    </body>
+    </main>
+</html>
